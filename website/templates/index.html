@@ -17,7 +17,7 @@
                     <div class="custom_select">
                         <select name="one" id="one">
                             <option value="" selected hidden>Select</option>
-                            <option value="1">0</option>
+                            <option value="0">0</option>
                             <option value="1">1</option>
                             <option value="2">2</option>
                             <option value="3">3</option>
@@ -31,7 +31,7 @@
                     <div class="custom_select">
                         <select name="two" id="two">
                             <option value="" selected hidden>Select</option>
-                            <option value="1">0</option>
+                            <option value="0">0</option>
                             <option value="1">1</option>
                             <option value="2">2</option>
                             <option value="3">3</option>
@@ -45,7 +45,7 @@
                     <div class="custom_select">
                         <select name="three" id="three">
                             <option value="" selected hidden>Select</option>
-                            <option value="1">0</option>
+                            <option value="0">0</option>
                             <option value="1">1</option>
                             <option value="2">2</option>
                             <option value="3">3</option>
@@ -60,11 +60,11 @@
                     <div class="custom_select">
                         <select name="four" id="four">
                             <option value="" selected hidden>Select</option>
-                            <option value="1">0</option>
-                            <option value="1">1</option>
+                            <option value="4">0</option>
+                            <option value="3">1</option>
                             <option value="2">2</option>
-                            <option value="3">3</option>
-                            <option value="4">4</option>
+                            <option value="1">3</option>
+                            <option value="0">4</option>
                         </select>
                 </div>
                 
@@ -75,11 +75,11 @@
                     <div class="custom_select">
                         <select name="five" id="five">
                             <option value="" selected hidden>Select</option>
-                            <option value="1">0</option>
-                            <option value="1">1</option>
+                            <option value="4">0</option>
+                            <option value="3">1</option>
                             <option value="2">2</option>
-                            <option value="3">3</option>
-                            <option value="4">4</option>
+                            <option value="1">3</option>
+                            <option value="0">4</option>
                         </select>
                     </div>
                 
@@ -90,7 +90,7 @@
                     <div class="custom_select">
                         <select name="six" id="six">
                             <option value="" selected hidden>Select</option>
-                            <option value="1">0</option>
+                            <option value="0">0</option>
                             <option value="1">1</option>
                             <option value="2">2</option>
                             <option value="3">3</option>
@@ -105,11 +105,11 @@
                     <div class="custom_select">
                         <select name="seven" id="seven">
                             <option value="" selected hidden>Select</option>
-                            <option value="1">0</option>
-                            <option value="1">1</option>
+                            <option value="4">0</option>
+                            <option value="3">1</option>
                             <option value="2">2</option>
-                            <option value="3">3</option>
-                            <option value="4">4</option>
+                            <option value="1">3</option>
+                            <option value="0">4</option>
                         </select>
                     </div>
                 
@@ -120,11 +120,11 @@
                     <div class="custom_select">
                         <select name="eight" id="eight">
                             <option value="" selected hidden>Select</option>
-                            <option value="1">0</option>
-                            <option value="1">1</option>
+                            <option value="4">0</option>
+                            <option value="3">1</option>
                             <option value="2">2</option>
-                            <option value="3">3</option>
-                            <option value="4">4</option>
+                            <option value="1">3</option>
+                            <option value="0">4</option>
                         </select>
                     </div>
                 
@@ -135,7 +135,7 @@
                     <div class="custom_select">
                         <select name="nine" id="nine">
                             <option value="" selected hidden>Select</option>
-                            <option value="1">0</option>
+                            <option value="0">0</option>
                             <option value="1">1</option>
                             <option value="2">2</option>
                             <option value="3">3</option>
@@ -150,7 +150,7 @@
                     <div class="custom_select">
                         <select name="ten" id="ten">
                             <option value="" selected hidden>Select</option>
-                            <option value="1">0</option>
+                            <option value="0">0</option>
                             <option value="1">1</option>
                             <option value="2">2</option>
                             <option value="3">3</option>
@@ -163,6 +163,13 @@
                 </div>
             </div>
             </form>
+            <div class="result">
+                {% if pred !=0 %}
+                <p>
+                    Stress Score {{pred}}
+                </p>
+                {% endif %}
+            </div>
         </div>
 </body>
 </html>
